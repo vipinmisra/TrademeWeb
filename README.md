@@ -1,7 +1,7 @@
 # TrademeWeb
 This repository contains the test automation code to test the TradeMe web application. 
 
-About Project
+##About Project
 Part1:TradeMeWeb UI Test
 Using the TradeMe web site write automation code which does the following:
 1) Search an Existing Used Car listing with any relevant details like Keyword, Make, Model, 	Body Style etc.
@@ -15,17 +15,17 @@ Using the TradeMe web site write automation code which does the following:
 
 Project built with Cucumber BDD framework using Selenium and Java.
 
-Tools used:-
+##Tools used:-
 IntelliJ Commnuity Edition
 Cucumber
 JDK 18
 Apache Maven 3.8.5
 
-Installation
+##Installation
 Clone the repo:
 https://github.com/vipinmisra/TrademeWeb.git
 
-Instructions:-
+##Instructions:-
 
 Open a command-prompt:- 
 Navigate to project directory where you would find src , pom.xml etc.
@@ -38,6 +38,6 @@ mvn clean test  -Dbrowser=edge
 For execution in FireFox please use which is also default browser:-
 mvn clean test  -Dbrowser=firefox
 
-Test Results:-
+##Test Results:-
 Execution reports are generated under ./target directory under project root directory.
 
