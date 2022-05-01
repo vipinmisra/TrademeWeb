@@ -32,12 +32,15 @@ Navigate to project directory where you would find src , pom.xml etc.
 
 Run the below  execution command:-
 mvn clean test
+Above command will trigger execution in Edge browser
 
-For execution in Edge please use which is also default browser:-
+For execution in Edge please use following command:-
+
 mvn clean test  -Dbrowser=edge
+
 For execution in FireFox please use which is also default browser:-
+
 mvn clean test  -Dbrowser=firefox
 
 ## Test Results:-
 Execution reports are generated under ./target directory under project root directory.
-
