@@ -23,7 +23,7 @@ Project built with Cucumber BDD framework using Selenium and Java.
 
 ## Installation
 Clone the repo:
-** https://github.com/vipinmisra/TrademeWeb.git  **
+**https://github.com/vipinmisra/TrademeWeb.git**
 
 ## Instructions:-
 
@@ -37,15 +37,15 @@ Above command will trigger execution in Edge browser which is default browser.
 
 For execution in Edge please use following command:-
 
-** mvn clean test  -Dbrowser=edge **
+**mvn clean test  -Dbrowser=edge**
 
 For execution in Chrome please use following command:-
 
-** mvn clean test  -Dbrowser=chrome  **
+**mvn clean test  -Dbrowser=chrome**
 
 For execution in FireFox please use following command:-
 
-** mvn clean test  -Dbrowser=firefox **
+**mvn clean test  -Dbrowser=firefox**
 
 ## Test Results:-
 Execution reports are generated under ./target directory under project root directory.
