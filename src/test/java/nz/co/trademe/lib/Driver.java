@@ -4,10 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
@@ -28,7 +24,7 @@ public class Driver {
         switch(browser) {
             case "chrome":
             {
-                System.setProperty("webdriver.chrome.driver", projectPath + Properties.getProperty("firefox_path"));
+                System.setProperty("webdriver.chrome.driver", projectPath + "\\src\\test\\resources\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
             }
@@ -47,10 +43,9 @@ public class Driver {
             }
         }
 
-        // set the implicit timeouts
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        // setting the implicit timeouts
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 
         // maximize the browser
         driver.manage().window().maximize();
