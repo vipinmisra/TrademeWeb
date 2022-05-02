@@ -24,20 +24,20 @@ public class Driver {
         switch(browser) {
             case "chrome":
             {
-                System.setProperty("webdriver.chrome.driver", projectPath + "\\src\\test\\resources\\drivers\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/drivers/chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
             }
             case "firefox":
             {
-                System.setProperty("webdriver.gecko.driver", projectPath + "\\src\\test\\resources\\drivers\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", projectPath + "/src/test/resources/drivers/geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
             }
             case "edge":
             default:
             {
-                System.setProperty("webdriver.edge.driver", projectPath + "\\src\\test\\resources\\drivers\\msedgedriver.exe");
+                System.setProperty("webdriver.edge.driver", projectPath + "/src/test/resources/drivers/msedgedriver.exe");
                 driver = new EdgeDriver();
                 break;
             }
